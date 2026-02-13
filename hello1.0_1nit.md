@@ -346,6 +346,14 @@ Open your terminal (Ubuntu/WSL). Make sure you're in the fsociety venv:
 source ~/fsociety/bin/activate
 ```
 
+Disable SSH host key checking:
+
+```bash
+export ANSIBLE_HOST_KEY_CHECKING=False
+```
+
+Why? First time you SSH to a device, it asks "Are you sure you want to continue connecting (yes/no)?". Annoying when you're hitting four devices at once. This skips that.
+
 Get all four device IPs from the CML topology canvas.
 
 ```bash
